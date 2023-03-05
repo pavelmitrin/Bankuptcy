@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html', { "title": "Главная" })
+	<body>
+			@@include('html/header.html', {})
+			<main class="position-relative">
+				@@include('html/payment.html', {})
+				@@include('html/withUs.html', {})
+				@@include('html/sixSteps.html', {})
+				@@include('html/whatProduce.html', {})
+				@@include('html/undegroProduce.html', {})
+				@@include('html/whatDebts.html', {})
+				@@include('html/helped.html', {})
+				@@include('html/stages.html', {})
+				@@include('html/effect.html', {})
+				@@include('html/specialOfer.html', {})
+				@@include('html/getOutDebt.html', {})
+				@@include('html/usefulInformation.html', {})
+
+				<div id="contacts">
+					@@include('html/info.html', {})				
+					@@include('html/map.html', {})	
+				</div>
+
+				<div id="reviews">
+					@@include('html/reviews.html', {})
+				</div>
+
+
+				<a href="#" class="position-fixed up-arrow"><i class="bi bi-arrow-up-circle"></i></a>
+			</main>
+		<script src="files/vendors/bootstrap.bundle.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

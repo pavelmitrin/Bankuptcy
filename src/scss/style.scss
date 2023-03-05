@@ -1,0 +1,254 @@
+//* <ПЕРЕМЕННЫЕ, ШРИФТЫ, МИКСИНЫ>=====================================================================================================================
+@import "abstracts/_variables";
+//* </ПЕРЕМЕННЫЕ, ШРИФТЫ, МИКСИНЫ>=====================================================================================================================
+
+//* <ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=====================================================================================================================
+// @import "base/_nullstyle";
+// @import "base/_container";
+body {
+	color: $black-color;
+	font-size: 18px;
+	font-family: $fontFamily, sans-serif;
+	font-weight: 300;
+}
+body._lock {
+	overflow: hidden;
+}
+//* </ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=====================================================================================================================
+
+
+//* <ОСНОВНАЯ СЕТКА>=====================================================================================================================
+
+	//CSS code here!!!
+
+//* </ОСНОВНАЯ СЕТКА>=====================================================================================================================
+@import "layout/_header";
+@import "layout/_footer";
+
+.main {
+
+}
+.title {
+	font-size: 52px;
+	text-shadow: 2px 2px 1px $yellow-color;
+}
+.subtitle {
+	font-size: 40px;
+	text-shadow: 2px 2px 1px $yellow-color;
+}
+.btn, .btn:hover, .btn:active {
+	background-color: $yellow-color;
+	border-color: $yellow-border-color;
+	color: $black-color;
+	font-weight: 500;
+	box-shadow: 10px 10p 1px solid $black-color;
+}
+.accordion-button:focus {
+	border-color: $yellow-border-color;
+	box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+	color: inherit;
+	background-color: inherit;
+	box-shadow: none;
+	&::after {
+		background-image: var(--bs-accordion-btn-icon);
+	}
+}
+.border {
+	border-color: $yellow-border-color !important; 
+}
+
+
+// payment
+.payment {
+
+	&__title {
+
+	}
+	.accordion-item.payment__accordion-item {
+		border: 0;
+		margin-bottom: 15px;
+		box-shadow: 2px 2px 2px $yellow-border-color, -2px -2px 2px $yellow-border-color;
+		.accordion-body {
+			border-top: 2px solid $yellow-border-color;
+		}
+	}
+	&__form {
+		// box-shadow: 2px 2px 2px $yellow-border-color, -2px -2px 2px $yellow-border-color;
+		background-color: $yellow-color;
+		border-radius: 5px;
+		button {
+			box-shadow: 1px 1px 1px $black-color, inset 1px 1px 1px $black-color;
+		}
+		button:active {
+			box-shadow: 2px 2px 1px $black-color, inset 2px 2px 1px $black-color;
+		}
+	}
+	
+}
+// with-us
+.with-us {
+	
+	&__carts{
+
+	}
+	&__cart {
+		border-color: $yellow-border-color;
+	}
+}
+// six-steps
+.six-steps {
+	background-color: $yellow-color;
+	&__cart {
+		border-color: $yellow-border-color;
+	}
+}
+// undergo-procedure
+.undergo-procedure {
+
+	&__item {
+		border: 2px solid $yellow-border-color;
+	}
+}
+// what-debts 
+.what-debts {
+
+	&__item {
+		position: relative;
+		height: 180px;
+		p {
+			position: relative;
+		}
+	}
+	.what-debts__item_num::before {
+		content: "";
+		width: 97.5%;
+		height: 98%;
+		position: absolute;
+		top: 1px;
+		left: 5px;
+		top: 0;
+		left: 0;
+		background: url("@img/picture/credits.jpg") ;
+		opacity: 0.3;	}
+}
+// helped-block 
+.helped-block {
+	background-color: $yellow-color;
+	&__card {
+		border-color: $yellow-border-color;
+		
+	}
+}
+// stages
+.stages {
+
+	.accordion-item.stages__item {
+		border: 0;
+		margin-bottom: 15px;
+		box-shadow: 2px 2px 2px $yellow-border-color, -2px -2px 2px $yellow-border-color;
+		.accordion-body {
+			border-top: 2px solid $yellow-border-color;
+		}
+	}
+}
+// get-out-debt 
+.get-out-debt {
+	position: relative;
+	::before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url('@img/picture/advantages.jpg') 50% 50% no-repeat;
+		opacity: 0.1;
+	}
+	&__num {
+		color: $black-color;
+		text-shadow: 0 0 1px $yellow-color;
+	}
+	h2, h5, p {
+		position: relative;
+	} 
+}
+// useful-information
+.useful-information {
+
+	.accordion-item.useful-information__item {
+		border: 0;
+		margin-bottom: 15px;
+		box-shadow: 2px 2px 2px $yellow-border-color, -2px -2px 2px $yellow-border-color;
+		.accordion-body {
+			border-top: 2px solid $yellow-border-color;
+		}
+	}
+}
+// feedback
+.feedback {
+
+	&__form {
+		background-color: $yellow-color;
+		border-radius: 5px;
+	}
+	button {
+		box-shadow: 1px 1px 1px $black-color, inset 1px 1px 1px $black-color;
+	}
+	button:active {
+		box-shadow: 2px 2px 1px $black-color, inset 2px 2px 1px $black-color;
+	}
+}
+
+.map {
+	height: 300px;
+}
+
+// review-carousel
+.review-carousel {
+	
+	.carousel-indicators {
+		button {
+			background-color: $black-color;
+			&.active {
+				background-color: $yellow-color;
+			}
+		}
+	}
+	.carousel-item {
+		height: 65vh;
+		img {
+			object-fit: cover;
+			object-position: center;
+			width: 100%;
+		}
+	}
+	.carousel-control-prev-icon, .carousel-control-next-icon {
+		filter: invert(100%);
+	}
+}
+
+.review {
+
+	&__stars i {
+		padding: 0 5px;
+		&::before {
+			color: $yellow-color;
+		}
+	}
+}
+
+
+
+a.up-arrow {
+	color: inherit;
+	bottom: 40px;
+	right: 30px;
+	&.none {
+		display: none;
+	}
+	i {
+		font-size: 30px;
+	}
+}

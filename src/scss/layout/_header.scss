@@ -1,0 +1,37 @@
+.header {
+	z-index: 50;
+	.navbar {
+		background-color: $yellow-color;
+	}
+	&__tel {
+		color: #000;
+		text-decoration: none;
+		&:hover {
+			color: #000;
+			text-shadow: 1px 1px 1px $yellow-color;
+		}
+	}
+
+.logo {
+	width: 50px;
+}
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active {
+	box-shadow: none;
+	border: 0;
+	outline: 0;
+}
+
+.nav-link {
+	color: #000;
+	border-bottom: 3px solid transparent;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		border-bottom: 3px solid $black-color;
+	}
+	&.active {
+		border-bottom: 3px solid #000;
+
+	}
+}
+}
+
